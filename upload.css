@@ -1,0 +1,88 @@
+.container-fluid{
+	background-color: chocolate ;
+	height:700px;
+	color:white;
+	}
+
+.container-fluid .box a{
+	text-decoration: none;
+	padding:10px;
+	background-color:#380000;
+	color:white; 
+	position: fixed;
+	top:10px;
+	right: 10px;
+}
+
+.box{
+	background-color:#480000 ;
+	color:white;
+	box-shadow: 2px 10px 5px #A80000;
+}
+
+label{
+	color:white;
+	font-size: 25px;
+	margin-left: 20px;
+	text-decoration: underline; 
+}
+.box label{
+	color:green;
+	font-size:20px;
+	margin:5px;
+}
+.row{
+	margin:50px;
+	padding: 20px;
+}
+
+ .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+button{
+	border: none;
+	padding:10px;
+	background-color:#380000;
+	color:white; 
+	cursor: pointer;
+}
+@media screen and (max-width: 1000px){
+	.container-fluid{
+		height:1000px
+	}
+}
+
+@media screen and (max-width: 900px){
+	.container-fluid{
+		background-color: chocolate ;
+		height:1000px;
+		color:white;
+	}
+}
+
+@media screen and (max-width: 454px){
+
+	.container-fluid{
+		background-color: chocolate ;
+		height:1000px;
+		color:white;
+	}
+	h1{
+		font-size:20px;
+	}
+
+	label{
+	margin-left: 5px;
+	}
+
+	.container-fluid .box a{
+		padding:8px;
+		position:relative;
+		float:right;
+		top:5px;
+		right: 5px;
+	}
+}

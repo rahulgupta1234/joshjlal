@@ -1,0 +1,322 @@
+@import url('font-awesome/css/font-awesome.min.css')
+@import url('bootstrap/css/bootstrap.min.css')
+
+body,html{
+	height:100%;
+}
+
+* {
+	box-sizing: border-box;
+  margin: 0px;
+  padding: 0px; 
+}
+
+.sidenaav{
+	height:100%;
+	width:0;
+	position:fixed;
+	z-index:2;
+ 	overflow-x: hidden;
+ 	top:0;
+    left:0;
+ 	background-color: #803300;  
+ 	transition: .5s;
+}
+
+.sidenaav h5{
+	font-size: 20px;
+	margin:30px;
+	margin-left: 32px;
+	color: 	 #ff3333; 
+}
+
+.sidenaav .tabs a{
+	text-decoration: none;
+	color: #ff944d;
+	display: block;
+    padding: 10px 10px 8px 32px;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+.sidenaav .tabs a:hover {
+  color: #f1f1f1;
+}
+
+.sidenaav .tabs .closebtn{
+	position: absolute;
+	font-size: 40px;
+	color: #ff944d;
+	top:0;
+	right:0;
+	margin-left: 50px; 
+}
+
+.sidenaav .tabs hr{
+	width:70%;
+	border: 1px solid #ff3333;
+}
+#home{
+	background-image: url("wallpaper/COVER4.jpg");
+}
+
+#about{
+	background-image: url("wallpaper/bg1.jpg");
+	height:650px;
+}
+#events{
+	background-image: url("wallpaper/POSTER1.jpg");
+}
+#contact{
+	background-color: #4d1f00; 
+}
+
+.parallax{
+	height:750px;
+	background-attachment: fixed !important;
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: center;
+}
+
+.home .btn-lg {
+	border: 2px solid ;
+	background-color: transparent;
+  	padding: 10px 50px;
+  	margin-top: 295px;
+  	font-size: 20px;
+  	cursor: pointer;
+	border-color: #ff9800;
+  	color: orange; 
+}
+
+
+.home .btn-lg:hover{
+	color:white;
+	background-color: #ff9800;
+}
+
+/*.home .row{
+	    margin-top: 300px;
+}*/
+
+.home .openNav{
+	color:white; 
+	font-size: 30px; 
+	padding:20px; 
+	z-index:0; 
+	cursor:pointer;
+	position: fixed;
+}
+
+.home .openNav:hover {
+	color:#ff8533;
+}
+.about center{
+	padding-top: 40px;
+	font-size:40px;
+	font-family: georgia;
+	color:#989898;
+}
+
+
+.about p{
+	padding-top: 60px;
+	padding-left: 50px;
+	padding-right: 50px;
+	font-size: 25px;
+	font-family: times new roman;
+	color:#696969;
+}
+
+.events center{
+    padding-top: 40px;
+    font-size:40px;
+	font-family: georgia;
+	color: white;	
+}
+
+.events .item .carousel-caption a{
+      text-decoration: none;
+       color:white;
+       margin: 10px;
+    }
+.events .carousel-caption a:hover
+   {
+      color:black;
+    }
+
+
+
+/*Contact section*/
+.contact ,.contact b{
+	color:#ff944d;
+}
+
+.contact .row{
+	padding-top: 70px;
+	margin-left: 40px
+}
+
+.contact img{
+	height:400px;
+	width:540px
+}
+
+#list{
+	margin-left:50px;
+}
+
+li{
+	margin-left:40px;
+	margin-bottom: 40px;
+	overflow: hidden;
+	color:green;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.contact .fa{
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.contact .fa-facebook{
+	background: #4d1f00;
+  	color: white;
+}
+.contact .fa-facebook:hover {
+	color:blue;
+}
+.contact .fa-instagram{
+  background: #4d1f00;
+  color: white;
+}
+.contact .fa-instagram:hover {
+  color: #800033;
+}
+.contact .fa-twitter{
+	 background: #4d1f00;
+  	color: white;
+}
+.contact .fa-twitter:hover {
+  	color: #3366ff;
+}
+
+@media screen and (max-width: 1028px){
+.home .btn-lg{
+  	padding: 10px 50px;
+    margin-top: 295px;
+	}
+}
+
+@media screen and (max-width: 950px)
+{
+	/*.home .btn-lg{
+  	padding: 10px 50px;
+    margin-top: 310px;
+	}*/
+
+	#about{
+	height:600px;
+	}
+	.about p{
+	font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 750px)
+{
+	#about{
+	height:600px;
+	}
+	.about p{
+	font-size: 17px;
+	}
+	
+	.contact .row{
+	padding-top: 70px;
+	margin-left: 10px
+    }
+
+	#list{
+		margin-top: 20px;
+		margin-left:10px;
+	}
+}
+
+@media screen and (max-width: 576px)
+{	
+	#home{
+	background-image: url("wallpaper/COVER4.jpg");
+	}
+	.home .btn-lg{
+  	padding: 10px 50px;
+    margin-top: 420px;
+	}
+}
+
+@media screen and (max-width: 550px)
+{
+	#about{
+	height:600px;
+	}
+
+	.about p{
+	font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 470px)
+{
+	
+	#about{
+	height:620px;
+	}
+
+	.about p{
+	font-size: 13px;
+	}
+	.home .openNav{
+		padding: 5px;
+		font-size: 25px;
+	}
+}
+
+
+@media screen and (max-width: 380px)
+{	
+	
+
+	.home .btn-lg{
+  	padding: 10px 50px;
+    margin-top: 350px;
+	}
+
+	#about{
+	height:710px;
+	}
+	.about p{
+	font-size: 13px;
+	}
+
+	#list{
+	margin-top:50px;
+   }
+}
+
+@media screen and (max-width: 310px)
+{	
+
+	#about{
+	height:800px;
+	}
+	.about p{
+	font-size: 10px;
+	}
+}
